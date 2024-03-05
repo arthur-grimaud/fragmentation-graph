@@ -22,9 +22,10 @@ ion_cap_formula = {
 }
 
 ion_cap_delta_mass = {
-    name: mass.calculate_mass(formula, absolute=False) for (name, formula) in ion_cap_formula.items()
+    name: mass.calculate_mass(formula, absolute=False)
+    for (name, formula) in ion_cap_formula.items()
 }
-
+print(ion_cap_delta_mass)
 
 ion_direction = {
     "a": "n-term",
